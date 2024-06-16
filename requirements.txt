@@ -1,0 +1,5 @@
+anthropic
+flask
+requests
+gunicorn
+openai==0.28
