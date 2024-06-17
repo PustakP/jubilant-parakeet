@@ -104,7 +104,7 @@ async def get_quantum_news_report():
             })
         
         print("No cached report found, generating new report")
-        # If no cached report, generate a new one
+        '''        # If no cached report, generate a new one
         query = f"Latest news and developments in quantum physics from {start_date} to {end_date}"
         researcher = GPTResearcher(query=query, report_type=report_type)
         await researcher.conduct_research()
@@ -119,7 +119,7 @@ async def get_quantum_news_report():
             "end_date": str(end_date),
             "report": report,
             "source": "fresh"
-        })
+        })'''
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
