@@ -1,4 +1,5 @@
 
 *.env
+api.py
 /quantinfo/
 __pycache__/
